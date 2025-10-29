@@ -1,0 +1,16 @@
+{
+  "name": "cryosense-launcher",
+  "version": "1.0.0",
+  "bin": "start.js",
+  "scripts": {
+    "start:backend": "cd backend && npm install && npm start",
+    "start:frontend": "cd frontend && npm install && npm start",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "dependencies": {
+    "open": "^9.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
